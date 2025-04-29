@@ -1135,6 +1135,7 @@
   }
   
   /* ===== Footer ===== */
+/* ===== Footer ===== */
   .glass-footer {
     background: var(--glass-bg);
     border-top: 1px solid var(--glass-border);
@@ -1171,6 +1172,114 @@
     padding-top: 20px;
     border-top: 1px solid var(--glass-border);
   }
+  .glass-footer {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 60px 30px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Left: Subscribe */
+  .footer-left {
+    flex: 1 1 40%;
+    min-width: 280px;
+    margin-bottom: 30px;
+  }
+  
+  .subscribe-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #00ffd9;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .subscribe-form input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  .subscribe-form input::placeholder {
+    color: #ccc;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00ffd9;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #00c9a7;
+  }
+  
+  /* Right: Links and Social */
+  .footer-right {
+    flex: 1 1 50%;
+    min-width: 300px;
+    text-align: right;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  
+  .footer-nav a {
+    color: #ffffffb0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #00ffd9;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #ffffffb0;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #00ffd9;
+  }
+  
   
   /* ===== Toast Notification ===== */
   .toast {
