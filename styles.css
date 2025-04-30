@@ -342,6 +342,58 @@
     transform: translateY(-2px);
     border-color: var(--secondary-color);
   }
+
+
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+  }
+
+  .hero-text {
+    padding-left: 0; /* Remove left padding */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .glitch-text {
+    font-size: 3rem; /* Adjust font size for medium screens */
+  }
+
+  .hero-description {
+    font-size: 1rem; /* Adjust description font size */
+  }
+
+  .cta-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Add gap between buttons */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .glitch-text {
+    font-size: 2.5rem; /* Further reduce font size */
+  }
+
+  .hero-description {
+    font-size: 0.9rem; /* Adjust description font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .glitch-text {
+    font-size: 2rem; /* Adjust font size for very small screens */
+  }
+
+  .hero-description {
+    font-size: 0.8rem; /* Adjust description font size */
+  }
+}
   
   /* ===== Section Styles ===== */
   .section {
