@@ -2,11 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>AYlabs – AI-Driven Innovation</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo-img {
+      max-width: 150px;
+      height: auto;
+    }
+    @media screen and (min-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr 2fr;
+        gap: 60px;
+        align-items: start;
+      }
+    }
+    .contact-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .contact-icon {
+      width: 45px;
+      height: 45px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4caf50;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+    .contact-text h4 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .contact-text p {
+      margin-bottom: 0;
+      color: #777;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -174,42 +244,39 @@
 
 
 <section id="contact" class="section">
-    <div class="section-header">
-        <h2 class="section-title">Contact</h2>
-        <div class="section-line"></div>
+  <div class="section-header">
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-container">
+    <div class="logo">
+      <img src="logo-r.png" alt="AYlabs Logo" class="logo-img" />
     </div>
-    <div class="contact-container">
-        <!-- Logo on the left -->
-        <div class="logo">
-            <img src="logo-r.png" alt="AYlabs Logo" class="logo-img">
-        </div>
-        
-        <!-- Contact info on the right -->
-        <!-- Contact info on the right -->
-        <div class="contact-info">
-          <h3>Get in Touch</h3>
-          <p>Have an idea? Want to build your AI product? Let’s talk.</p>
-          <div class="contact-details">
-              <div class="contact-item">
-                  <div class="contact-icon">
-                      <i class="fas fa-envelope"></i>
-                  </div>
-                  <div class="contact-text">
-                      <h4>Email</h4>
-                      <p>contact@aylabs.in</p>
-                  </div>
-              </div>
-              <div class="contact-item">
-                  <div class="contact-icon">
-                      <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div class="contact-text">
-                      <h4>Location</h4>
-                      <p>Bengaluru, India</p>
-                  </div>
-              </div>
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>Have an idea? Want to build your AI product? Let’s talk.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
           </div>
-      </div> 
+          <div class="contact-text">
+            <h4>Email</h4>
+            <p>contact@aylabs.in</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Location</h4>
+            <p>Bengaluru, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
   <!-- Footer -->
   <footer class="glass-footer">
